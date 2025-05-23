@@ -2,7 +2,7 @@
   "type": "module",
   "name": "@webxdc/realtime",
   "description": "High level real-time and presence API for webxdc apps",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "author": "adbenitez",
   "keywords": [
