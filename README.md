@@ -38,4 +38,19 @@ realtime.connect();
 realtime.sendPayload({ name: "foo", text: "hi!" });
 ```
 
+Remember to include the `webxdc.js` file in your `index.html`:
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="webxdc.js"></script>
+  </head>
+  <body>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+```
+
 For a full example check the [./src/main.ts](https://github.com/webxdc/realtime/blob/main/src/main.ts) file.
