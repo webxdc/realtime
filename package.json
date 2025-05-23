@@ -21,7 +21,6 @@
     "dist"
   ],
   "module": "./dist/realtime.js",
-  "types": "./lib/realtime.d.ts",
   "source": "./lib/realtime.ts",
   "exports": {
     ".": {
