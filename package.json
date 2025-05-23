@@ -1,0 +1,50 @@
+{
+  "type": "module",
+  "name": "@webxdc/realtime",
+  "description": "High level real-time and presence API for webxdc apps",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "adbenitez",
+  "keywords": [
+    "webxdc",
+    "deltachat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webxdc/realtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webxdc/realtime/issues"
+  },
+  "homepage": "https://github.com/webxdc/realtime",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/realtime.js",
+  "types": "./lib/realtime.d.ts",
+  "source": "./lib/realtime.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/realtime.js"
+    }
+  },
+  "scripts": {
+    "start": "vite --port 3000",
+    "emulator": "concurrently \"npm run start\" \"webxdc-dev run http://localhost:3000\"",
+    "fix": "prettier --write .",
+    "check": "tsc && prettier --check .",
+    "build": "tsc --p ./tsconfig-build.json && vite build"
+  },
+  "devDependencies": {
+    "@webxdc/types": "latest",
+    "@webxdc/vite-plugins": "latest",
+    "@webxdc/webxdc-dev": "latest",
+    "concurrently": "^9.1.2",
+    "prettier": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "dependencies": {
+    "lib0": "^0.2.108"
+  }
+}
