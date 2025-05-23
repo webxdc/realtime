@@ -6,9 +6,17 @@
 
 High level real-time and presence API on top of [webxdc.joinRealtimeChannel()](https://webxdc.org/docs/spec/joinRealtimeChannel.html).
 
-With this library you can easily discover online peers
-and send big payloads without having to worry about the 128KB
-size limit of the `webxdc.joinRealtimeChannel()` API.
+## Why to use?
+
+🟢 easily discover who is online, no need to implement presence on your own.
+
+🔄 easy sync/advertising of user's state with peers.
+
+💫 send and receive objects around similar to the
+`webxdc.sendUpdate()` API without having to worry to convert from/to `Uint8Array`
+
+📦 send big payloads of MBs without worrying to split in chunks
+of 128KB
 
 ## Install
 
