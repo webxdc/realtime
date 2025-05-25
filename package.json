@@ -21,6 +21,7 @@
     "dist"
   ],
   "module": "./dist/realtime.js",
+  "types": "./lib/realtime.d.ts",
   "source": "./lib/realtime.ts",
   "exports": {
     ".": {
@@ -41,7 +42,8 @@
     "concurrently": "^9.1.2",
     "prettier": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "vite-plugin-dts": "^4.5.4"
   },
   "dependencies": {
     "lib0": "^0.2.108"

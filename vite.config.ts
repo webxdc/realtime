@@ -1,4 +1,6 @@
 import { mockWebxdc } from "@webxdc/vite-plugins";
+import dts from "vite-plugin-dts";
+
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
@@ -6,7 +8,7 @@ import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [mockWebxdc()],
+  plugins: [dts({ tsconfigPath: "./tsconfig-build.json" }), mockWebxdc()],
   build: {
     lib: {
       entry: resolve(__dirname, "lib/realtime.ts"),
